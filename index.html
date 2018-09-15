@@ -9,13 +9,92 @@
   <title>Document</title>
 </head>
 <body>
-  
   <h1 class="header">Pixar Trivia!</h1>
-  <section>
-    <div id="time"></div>
-    <div class="question"></div>
-  </section>
+  <div id="instructions">
+    <p> Welcome to Pixar Trivia! You will be presented with a series of questions about Pixar movies, you will have 30 seconds to answer. Click the button below to get started. </p>
+    <button>Start</button>
+  </div>
   
+  <section id="main">
+    <div id="time"></div>
+    <div class="questions">
+      <div class="question1 hidden">1. What animated feature film was Pixar's first release in 1995?
+        <div class="answer1">
+          <p class="answer">Monster Inc</p>
+          <p class="answer"> A Bug's Life</p>
+          <p class="correct answer">Toy Story</p>
+          <p class="answer">Cars</p>
+        </div>
+      </div>
+      <div class="question2 hidden">2. The movie "WALL-E" features a robot of the same name. What is his job?
+        <div class="answer2">
+          <p class="correct answer">Trash Collector</p>
+          <p class="answer">Gardener</p>
+          <p class="answer">Wall Repair</p>
+          <p class="answer">Communications</p>
+        </div>
+      </div>
+      <div class="question3 hidden">3. What Pixar character says, "No matter how many times you save the world, it always manages to get back in jeopardy again?"
+        <div class="answer3 hidden">
+          <p class="correct answer">Mr. Incredible</p>
+          <p class="answer">Buzz Lightyear</p>
+          <p class="answer">Mike Wazowski</p>
+          <p class="answer">Miguel Rivera</p>
+        </div>
+      </div>
+      <div class="question4 hidden">4. The character Lightning McQueen in the 2006 movie "Cars" finds himself stuck in what town?
+        <div class="answer4 hidden">
+          <p class="answer">Jericho Gap</p>
+          <p class="correct answer">Radiator Springs</p>
+          <p class="answer">Brake Island</p>
+          <p class="answer">Muffler Oasis</p>
+        </div>
+      </div>
+      <div class="question5 hidden">5. In the Oscar-winning movie "Up," where does character Carl Fredricksen move his house?
+        <div class="answer5">
+          <p class="answer">Gravity Falls</p>
+          <p class="answer">Ant Island</p>
+          <p class="answer">Amazon Falls</p>
+          <p class="correct answer">Paradise Falls</p>
+        </div>
+      </div>
+      <div class="question6 hidden">6. What European city is the setting for the 2007 movie "Ratatouille?"
+        <div class="answer6">
+          <p class="answer">Rome</p>
+          <p class="answer">London</p>
+          <p class="answer">Berlin</p>
+          <p class="correct answer">Paris</p>
+        </div>
+      </div>
+      <div class="question7 hidden">7. In the movie "Cars 2," the character Mater is mistaken for what?
+        <div class="answer7">
+            <p class="correct answer">A Spy</p>
+            <p class="answer">A Diplomat</p>
+            <p class="answer">A Racecar</p>
+            <p class="answer">A Truck</p>
+        </div>
+      </div>
+      <div class="question8 hidden">8. What is the name of the overprotective father in the film "Finding Nemo"?
+        <div class="answer8">
+          <p class="answer">Gill</p>
+          <p class="answer">Bloat</p>
+          <p class="correct answer">Marlin</p>
+            <p class="answer">Dory</p>
+        </div>
+      </div>
+      <div class="question9 hidden">9. What sport does the main character Riley play in the movie "Inside Out?"
+        <div class="answer9">
+          <p class="answer">Basketball</p>
+          <p class="correct answer">Hockey</p>
+          <p class="answer">Soccer</p>
+          <p class="answer">Baseball</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <section><div id="win"></div></section>
 
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
