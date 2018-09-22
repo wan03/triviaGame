@@ -192,7 +192,7 @@ console.log('first question ? ' + currentQuestion);console.log("move has fired")
 
 // Detect when right/wrong answer is and display that in the DOM
 
-function checkAnswer () {
+
 $(".answer").on("click", function () {
   if ($(this).hasClass("correct")) {
     console.log("check+ has fired");
@@ -209,7 +209,7 @@ $(".answer").on("click", function () {
     moveQuestion();
   };
 });
-};
+
 
 // Function to run the game
 
@@ -217,7 +217,6 @@ function game () {
   console.log("game has fired");
   run();
   moveQuestion();
-  checkAnswer(); 
 };
 
 // Click event listener to start the game when Start button is pressed.
