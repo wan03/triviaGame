@@ -47,7 +47,6 @@ function resetFunction (){
     stopReset();
     stopSmallRun();
     stopTimeRemaining(); 
-    console.log("reset has fired");   
     game();
   };
   
@@ -64,7 +63,6 @@ function resetFunction (){
     smallTime= 6;
     $(".fact").addClass("hidden")
     $(".question" + currentQuestion).removeClass("hidden");
-    console.log("small has fired");
     run();  
    };
   };
@@ -74,7 +72,6 @@ function noTime () {
   currentQuestion++
   outTime++
   $result = "You ran out of time! The correct answer is: "  + answers[currentQuestion];
-  console.log("no time has fired");
   moveQuestion();
   };
 };
@@ -128,7 +125,6 @@ function stopReset () {
 // Function to handle showing and hiding each question.
 
 function moveQuestion () {
-console.log('first question ? ' + currentQuestion);console.log("move has fired");
   if (currentQuestion == 1) {
     time = 20;
     $(".question1").removeClass("hidden");     
@@ -195,7 +191,6 @@ console.log('first question ? ' + currentQuestion);console.log("move has fired")
 
 $(".answer").on("click", function () {
   if ($(this).hasClass("correct")) {
-    console.log("check+ has fired");
     correct++
     currentQuestion++
     $result = "You are correct!"
@@ -204,7 +199,6 @@ $(".answer").on("click", function () {
     console.log("check - has fired");
     incorrect++
     currentQuestion++
-    console.log(currentQuestion);
     $result = "You are incorrect! The correct answer is: " + answers[currentQuestion];
     moveQuestion();
   };
@@ -214,7 +208,6 @@ $(".answer").on("click", function () {
 // Function to run the game
 
 function game () {
-  console.log("game has fired");
   run();
   moveQuestion();
 };
